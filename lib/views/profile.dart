@@ -1,3 +1,4 @@
+import 'package:eventvalle/views/home.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatefulWidget {
@@ -151,6 +152,10 @@ class _ProfileViewState extends State<ProfileView>
             switch (_currentIndex) {
               case 0:
                 print('Elemento seleccionado: Inicio');
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeView()),
+                    );
                 // Aquí puedes realizar acciones específicas para "Inicio"
                 break;
               case 1:
